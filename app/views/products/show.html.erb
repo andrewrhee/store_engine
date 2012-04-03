@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<h1 id="name"><%= @product %></h1>
+
+<p>
+  <b>Body:</b>
+  <%= @product.body %>
+</p>
+
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
+
+<%= link_to "Add to Cart", "#", :id => "add-to-cart" %>
+<%= link_to "See My Cart", "#", :id => "cart" %>
